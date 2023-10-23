@@ -16,8 +16,9 @@ int main()
 
 void printNumber(int i)
 {
-    if (i >= 2) printNumber(i / 8);
-    putchar('0' + i % 8);
+    if (i >= 16) printNumber(i / 16);
+    if(i >= 10 && i <= 15) printDigit(i);
+    else putchar('0' + i%16);
 }
 
 void printDigit(int i)
