@@ -13,7 +13,6 @@ int main() {
     printf("%d\n", strtoi("--2A", 16));
     printf("%d\n", strtoi(" 7fffffff", 16)); 
     printf("%d\n", strtoi(" ffffffff", 16)); 
-    
     return 0;
 }
 

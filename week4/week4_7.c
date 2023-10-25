@@ -21,7 +21,7 @@ int main() {
 
 int trim(char *str) 
 {
-    int i, start = 0, end = strlen(str) - 1;
+    int start = 0, end = strlen(str) - 1;
 
     while (str[start] == ' ' || str[start] == '\t') 
     {

@@ -24,5 +24,5 @@ void printNumber(int i)
 void printDigit(int i)
 {
     if (i < 10) printf("%d", i);
-    else putchar('A' + (i - 10));
+    else if(i < 35) putchar('A' + (i - 10));
 }

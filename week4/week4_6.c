@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+void reverse(char s[], int len);
+
 int main() {
     char line[100];
     int length;
