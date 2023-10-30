@@ -1,8 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
 void add(unsigned char a[], unsigned char b[], unsigned char s[], int n)
 {
-    ???
+    unsigned int c[n];
+    c[0] = 0;
+
+    for (int i = 0; i < n; i++)
+        c[i+1] = (a[i] + b[i]) / 256;
+    
+    for (int i = 0; i <= n; i++)
+        s[i] = (a[i] + b[i] + c[i]) % 256;
 }
 
 int main()
