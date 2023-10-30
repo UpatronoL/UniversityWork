@@ -2,7 +2,9 @@
 
 int lower(int c)
 {
-    return c + 32;
+    if('A' <= c && c <= 'Z')
+        return c + 32;
+    return c;
 }
 
 void toLower(char s[])
@@ -10,8 +12,7 @@ void toLower(char s[])
     int i = 0;
     while(s[i] != '\0')
     {
-        if('A' <= s[i] && s[i] <= 'Z')
-            s[i] = lower(s[i]);
+        s[i] = lower(s[i]);
         i++;
     }
 }
