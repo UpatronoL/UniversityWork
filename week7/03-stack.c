@@ -8,8 +8,7 @@ void push(double a)
 {
     stack[depth++] = a;
 }
-
-double pop()
+ouble pop()
 {
     depth --;
     double val = stack[depth];

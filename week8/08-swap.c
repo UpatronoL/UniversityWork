@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SWAP(T, X, Y) do { T _tmp = X; X = Y; Y = _tmp; } while(0)
+#define SWAP(T, X, Y) {T _tmp = X; X = Y; Y = _tmp;}
 
 int main() {
     int i = 42, j = 666;

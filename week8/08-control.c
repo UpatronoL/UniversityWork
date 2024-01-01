@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 #define until(X) while(!(X))
-#define do_until(X) do {} while(!(X))
 
 int main() {
 int i = 0;

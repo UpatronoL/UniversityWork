@@ -5,12 +5,12 @@
 
 static int saved = 0;
 
-void ungetch(int c)
+static void ungetch(int c)
 {
     saved = c;
 }
 
-int getch(void)
+static int getch(void)
 {
     int c = saved;
     if (c  < 0) return c;

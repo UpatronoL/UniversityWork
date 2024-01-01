@@ -23,20 +23,20 @@ double pop()
 void getnum(int c)
 {
     number = 0.0;
-	int counter = 0;
-	while(isdigit(c))
-	{
-    	number = number * 10.0 + c - '0';
-		c = getchar();
-	}
-	if(c != '.') return;
-	double fraction = 0;
-	while(isdigit(c = getchar()))
-	{
-		fraction = fraction * 10.0 + (c - '0');
-		counter++;
-	}
-	number = number + fraction * pow(10, -counter);
+    int counter = 0;
+    while(isdigit(c))
+    {
+	number = number * 10.0 + c - '0';
+	c = getchar();
+    }
+    if(c != '.') return;
+    double fraction = 0;
+    while(isdigit(c = getchar()))
+    {
+	fraction = fraction * 10.0 + (c - '0');
+	counter++;
+    }
+    number = number + fraction * pow(10, -counter);
 }
 
 int getop(void)

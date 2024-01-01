@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SWAP(type, X, Y) do { type _tmp = X; X = Y; Y = _tmp; } while(0)
+#define SWAP(type, X, Y) do {type _tmp = X; X = Y; Y = _tmp; } while(0)
 
 int main() 
 {
